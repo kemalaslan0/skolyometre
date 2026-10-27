@@ -19,7 +19,7 @@
 <body>
 
 <h1>Postura — Gizlilik Politikası</h1>
-<p class="meta">Son güncelleme: 23 Ekim 2026</p>
+<p class="meta">Son güncelleme: 28 Ekim 2026</p>
 
 <p>Postura ("uygulama"), duruş ve vücut simetrisi farkındalığı için tasarlanmış bir
 mobil uygulamadır. Gizliliğinize önem veriyoruz. Bu politika, uygulamanın hangi verileri
@@ -56,7 +56,8 @@ e-posta adresiniz veya telefon numaranız gibi sizi tanımlayan bilgiler içerme
 <p><strong>Bu kayıtlara hiçbir zaman dahil edilmeyenler:</strong> değerlendirme cevaplarınız, ölçüm ve duruş
 sonuçlarınız (açılar, seviyeler), profil bilgileriniz, fotoğraflarınız, notlarınız veya yazdığınız herhangi
 bir metin. Bunlar cihazınızdan çıkmaz.</p>
-<p>Bu istatistikleri reklam amacıyla kullanmaz, satmaz ve reklam şirketleriyle paylaşmayız. Uygulamayı
+<p>Bu istatistikleri reklam amacıyla kullanmaz, satmaz ve Meta dahil hiçbir reklam şirketiyle paylaşmayız; bu sayaçlar
+Meta'ya gönderilmez (reklam ölçümü için Meta'ya giden sınırlı veriler Bölüm 4'te ayrıca açıklanmıştır). Uygulamayı
 sildiğinizde cihazdaki sayaçlar da silinir. RevenueCat'te saklanan anonim kaydın silinmesini isterseniz
 bize e-posta ile ulaşabilirsiniz (Bölüm 9).</p>
 
@@ -72,14 +73,37 @@ aracılığıyla bulduysanız, Apple'ın AdServices çerçevesi cihazda bir atı
 RevenueCat'e iletir; RevenueCat jetonu Apple'a sorarak indirmenin hangi Apple Ads kampanyasından geldiğini
 (kampanya, reklam grubu, anahtar kelime gibi) öğrenir ve anonim kaydınızla birlikte saklar. Bu işlem reklam
 kimliğinizi (IDFA) kullanmaz ve App Tracking Transparency izni gerektirmez.</p>
+<p>RevenueCat ayrıca deneme ve abonelik olaylarını, reklam ölçümü için Meta'ya iletir (Bölüm 4).</p>
 <p>RevenueCat'in gizlilik politikası: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></p>
 
-<h2>4. Reklam ve İzleme</h2>
-<p>Uygulamada <strong>reklam gösterilmez</strong> ve <strong>reklam ağı ya da üçüncü taraf analitik/izleme
-SDK'sı bulunmaz</strong>. Reklam kimliğine (IDFA) erişmeyiz, App Tracking Transparency izni istemeyiz, sizi başka
-şirketlerin uygulamalarında veya web sitelerinde izlemeyiz, verilerinizi satmayız ve veri simsarlarıyla
-paylaşmayız. Uygulamadaki tek istatistik toplama, Bölüm 2'deki anonim kullanım sayaçları ve Bölüm 3'teki
-Apple Ads atıfıdır.</p>
+<h2>4. Reklam Ölçümü (Meta) ve İzleme</h2>
+<p>Uygulamanın içinde <strong>reklam gösterilmez</strong>. Postura'yı Facebook ve Instagram'da reklamla tanıtırız;
+bu reklamların kaç indirme ve abonelik getirdiğini ölçmek için <strong>Meta Platforms</strong>'un (Meta Platforms
+Ireland Ltd. / Meta Platforms, Inc.) uygulama SDK'sını kullanırız. Bu kapsamda Meta'ya şunlar gönderilir:</p>
+<ul>
+  <li><strong>Meta SDK'sı (uygulamadan):</strong> uygulamanın yüklenmesi ve açılması (etkinleştirme) olayları ve oturum
+      süreleri; Meta SDK'sının cihazınızda ürettiği rastgele bir kurulum kimliği (<em>Meta anonim kimliği</em>);
+      cihaz modeli, iOS ve uygulama sürümü, dil, saat dilimi, ekran boyutu ve operatör adı gibi teknik bilgiler;
+      Meta SDK'sının kendi çökme ve hata raporları; ve her internet bağlantısında olduğu gibi IP adresiniz.</li>
+  <li><strong>RevenueCat (sunucudan, Meta Dönüşüm API'si):</strong> deneme başlatma, denemenin ücretli aboneliğe
+      dönüşmesi, ilk satın alma ve yenileme olayları (ürün, fiyat, para birimi, zaman); bu olaylar Meta anonim kimliği
+      ve anonim RevenueCat kimliğinizin tek yönlü özetiyle (hash) birlikte, uygulama ve iOS sürümü gibi temel teknik
+      bilgilerle gönderilir.</li>
+</ul>
+<p>Reklam kimliğinize (IDFA) <strong>erişmeyiz</strong> ve App Tracking Transparency izni <strong>istemeyiz</strong>;
+Meta SDK'sı olaylarını Meta'ya "izlemeye izin verilmedi" işaretiyle gönderir. Ölçümleriniz, değerlendirme cevaplarınız,
+duruş sonuçlarınız, profil bilgileriniz, fotoğraflarınız, notlarınız, yazdığınız metinler ve Bölüm 2'deki kullanım
+sayaçları <strong>Meta'ya gönderilmez</strong>; yani ölçüm, cevap veya duruş sonucu gibi hiçbir sağlık ya da duruş
+bilginiz Meta'ya iletilmez. Meta yalnızca yukarıda sayılan olayları ve uygulamanın ve abonelik ürününün kimliklerini
+(ör. uygulama paket adı, ürün kodu) alır.</p>
+<p>Meta bu verileri kendi gizlilik politikası kapsamında da işleyebilir ve veriler bulunduğunuz ülke dışında
+(ör. AB ve ABD) işlenebilir: <a href="https://www.facebook.com/privacy/policy/">facebook.com/privacy/policy</a>.
+Bir Facebook/Instagram hesabınız varsa, Meta'nın "Meta teknolojileri dışındaki etkinliğiniz" ayarından bu tür
+bilgilerin hesabınızla ilişkilendirilmesini yönetebilirsiniz. Meta anonim kimliği uygulamayı sildiğinizde cihazdan
+silinir. Bize e-posta ile ulaşırsanız (Bölüm 9) RevenueCat'teki anonim kaydınızı sileriz; böylece bu kayıt üzerinden
+Meta'ya yeni olay gönderilmez. Meta'nın daha önce aldığı veriler Meta'nın kendi politikasına tabidir; bunları kişi
+bazında silmek bizim elimizde değildir, yukarıdaki Meta ayarından yönetebilirsiniz. Verilerinizi satmayız ve veri
+simsarlarıyla paylaşmayız.</p>
 
 <h2>5. İzinler</h2>
 <ul>
@@ -106,7 +130,7 @@ Sonuçlar yalnızca genel bilgilendirme amaçlıdır.</p>
 
 <div lang="en">
 <h1>Postura — Privacy Policy (English)</h1>
-<p class="meta">Last updated: October 23, 2026</p>
+<p class="meta">Last updated: October 28, 2026</p>
 
 <h2>1. Data stored on your device</h2>
 <p>Everything you enter or create in the app is stored <strong>only on your device</strong>: your answers to the
@@ -132,8 +156,9 @@ purchase ID</strong> already used to manage subscriptions and stored with Revenu
 address, phone number or other details that identify you, and no account is needed.</p>
 <p><strong>Never included:</strong> your assessment answers, measurement or posture results (angles, levels),
 profile details, photos, notes or any text you type. These never leave your device.</p>
-<p>We do not use these statistics for advertising, we do not sell them and we do not share them with advertising
-companies. Deleting the app removes the counters from your device. To have the anonymous record stored with
+<p>We do not use these statistics for advertising, we do not sell them and we do not share them with any advertising
+company, including Meta; these counters are never sent to Meta (the limited ad-measurement data that Meta receives is
+described separately in section 4). Deleting the app removes the counters from your device. To have the anonymous record stored with
 RevenueCat deleted, email us (section 9).</p>
 
 <h2>3. Third-party services</h2>
@@ -146,14 +171,36 @@ Store, Apple's AdServices framework creates an attribution token on your device.
 RevenueCat, which asks Apple which Apple Ads campaign the download came from (such as campaign, ad group and
 keyword) and stores that with your anonymous record. This does not use your advertising identifier (IDFA) and
 does not require App Tracking Transparency permission.</p>
+<p>RevenueCat also forwards trial and subscription events to Meta for ad measurement (section 4).</p>
 <p>RevenueCat privacy policy: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></p>
 
-<h2>4. Advertising and tracking</h2>
-<p>The app shows <strong>no ads</strong> and contains <strong>no ad network or third-party analytics/tracking
-SDK</strong>. We do not access the advertising identifier (IDFA), we do not ask for App Tracking Transparency
-permission, we do not track you across other companies' apps or websites, we do not sell your data and we do not
-share it with data brokers. The only statistics collected are the anonymous usage counters in section 2 and the
-Apple Ads attribution in section 3.</p>
+<h2>4. Ad measurement (Meta) and tracking</h2>
+<p>The app shows <strong>no ads</strong>. We advertise Postura on Facebook and Instagram, and to measure how many
+installs and subscriptions those ads produce we use the app SDK of <strong>Meta Platforms</strong> (Meta Platforms
+Ireland Ltd. / Meta Platforms, Inc.). For this purpose Meta receives:</p>
+<ul>
+  <li><strong>From the Meta SDK (in the app):</strong> app install and app open (activation) events and session
+      length; a random install ID generated on your device by the Meta SDK (the <em>Meta anonymous ID</em>);
+      technical device information such as device model, iOS and app version, language, time zone, screen size and
+      carrier name; the Meta SDK's own crash and error reports; and your IP address, as with any internet
+      connection.</li>
+  <li><strong>From RevenueCat (server-side, Meta Conversions API):</strong> trial start, trial-to-paid conversion,
+      first purchase and renewal events (product, price, currency, time), together with the Meta anonymous ID, a
+      one-way hash of your anonymous RevenueCat ID and basic technical information such as app and iOS version.</li>
+</ul>
+<p>We do <strong>not</strong> access your advertising identifier (IDFA) and we do <strong>not</strong> ask for App
+Tracking Transparency permission; the Meta SDK sends its events to Meta flagged as "tracking not permitted". Your
+measurements, assessment answers, posture results, profile details, photos, notes, anything you type and the usage
+counters from section 2 are <strong>never sent to Meta</strong>, so none of your health or posture results
+(measurements, answers or levels) reach Meta. Meta receives only the events listed above and the identifiers of the
+app and the subscription product (such as the app's bundle ID and the product code).</p>
+<p>Meta may also process this data under its own privacy policy, including outside your country (e.g. in the EU
+and the US): <a href="https://www.facebook.com/privacy/policy/">facebook.com/privacy/policy</a>. If you have a
+Facebook/Instagram account, you can manage whether such information is connected to your account in Meta's "Your
+activity off Meta technologies" settings. The Meta anonymous ID is removed from your device when you delete the
+app. If you email us (section 9), we delete your anonymous RevenueCat record, so no further events are sent to Meta
+from it. Data that Meta has already received is governed by Meta's own policy; we cannot delete it per person, and
+you can manage it in the Meta setting above. We do not sell your data and we do not share it with data brokers.</p>
 
 <h2>5. Permissions</h2>
 <ul>
